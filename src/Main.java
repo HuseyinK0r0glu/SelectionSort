@@ -12,8 +12,6 @@ public class Main {
 
     public static int[] selectionSort(int[] a){
 
-        exchange(a,1,2);
-
         int N = a.length;
 
         for(int i=0;i<N;i++){
@@ -21,7 +19,7 @@ public class Main {
             int min = i;
 
             for(int j=i;j<N;j++){
-                if(less(a[j],a[i])){
+                if(less(a[j],a[min])){
                     min = j;
                 }
             }
